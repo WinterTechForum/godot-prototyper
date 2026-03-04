@@ -14,9 +14,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Prototype Kit"
+config/name="Asteroid Splitter Prototype"
 config/version="0.1"
-run/main_scene="res://prototypes/asteroid_splitter/main.tscn"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [display]
