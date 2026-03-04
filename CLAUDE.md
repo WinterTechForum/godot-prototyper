@@ -40,6 +40,9 @@ godot-prototype-kit/
 - Each prototype gets a folder: `prototypes/<snake_case_name>/`
 - Each prototype is its own Godot game, with a project.godot file
   - Use the project.godot at the root as the template for new games
+- Every prototype folder MUST include a `HISTORY.md` file capturing prompt history for that prototype
+  - Include the original user prompt and significant follow-up prompt changes/constraints
+  - Update `HISTORY.md` whenever the prototype is revised from new prompts
 
 - Every prototype MUST have a `main.tscn` as its entry scene
 - Keep it to as few files as possible — ideally 1 scene + 1-3 scripts
@@ -79,11 +82,15 @@ When the user describes a game idea:
 1. **Identify the core mechanic** — What is the ONE interesting verb/action?
 2. **Identify the core tension** — What makes it challenging or interesting?
 3. **Identify the minimum viable prototype** — What's the least you can build to test if it's fun?
-4. **Build it** — Write the scene(s) and script(s)
-5. **Add tuning knobs** — Expose the 3-5 most important variables with @export
-6. **Add restart** — R to restart, Escape to quit
-7. **Update project.godot** — Set main_scene to this prototype
-8. **Validate** — Run headless import, fix errors
+4. **Capture prompt history** — Create/update `prototypes/<prototype_name>/HISTORY.md` with:
+   - Original user prompt
+   - Key follow-up prompts and constraint changes
+   - Brief timestamps/order markers (e.g., "Prompt 1", "Prompt 2")
+5. **Build it** — Write the scene(s) and script(s)
+6. **Add tuning knobs** — Expose the 3-5 most important variables with @export
+7. **Add restart** — R to restart, Escape to quit
+8. **Update project.godot** — Set main_scene to this prototype
+9. **Validate** — Run headless import, fix errors
 
 ## Common Patterns
 
