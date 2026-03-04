@@ -38,9 +38,11 @@ godot-prototype-kit/
 
 ### Structure
 - Each prototype gets a folder: `prototypes/<snake_case_name>/`
+- Each prototype is its own Godot game, with a project.godot file
+  - Use the project.godot at the root as the template for new games
+
 - Every prototype MUST have a `main.tscn` as its entry scene
 - Keep it to as few files as possible — ideally 1 scene + 1-3 scripts
-- Set `run/main_scene` in project.godot to the current prototype's main.tscn
 
 ### Game Feel Priorities
 When prototyping, focus on these in order:
