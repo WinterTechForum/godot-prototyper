@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://ping_pong_main"]
+
+[ext_resource type="Script" path="res://prototypes/ping_pong/main.gd" id="1"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1")
+
+[node name="LeftScoreLabel" type="Label" parent="."]
+offset_left = 240
+offset_top = 20
+offset_right = 400
+offset_bottom = 80
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+text = "0"
+
+[node name="RightScoreLabel" type="Label" parent="."]
+offset_left = 880
+offset_top = 20
+offset_right = 1040
+offset_bottom = 80
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+text = "0"
+
+[node name="MessageLabel" type="Label" parent="."]
+offset_left = 390
+offset_top = 280
+offset_right = 890
+offset_bottom = 440
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+text = ""
